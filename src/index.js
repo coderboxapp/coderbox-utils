@@ -6,7 +6,7 @@ import {
   transformPosition,
   transformEducation,
   transformJob
-} from 'transform'
+} from './transform'
 
 export const withTheme = (theme, Component) => {
   return () => <ThemeProvider theme={theme}><Component /></ThemeProvider>
