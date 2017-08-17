@@ -44,16 +44,3 @@ export const transformJob = job => {
 
   return item
 }
-
-export default item => {
-  switch (item.type) {
-    case 'position':
-      return transformPosition(item)
-    case 'education':
-      return transformEducation(item)
-    case 'job':
-      return transformJob(item)
-    default:
-      return item
-  }
-}
