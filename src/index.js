@@ -1,10 +1,16 @@
+import React from 'react'
 import moment from 'moment'
+import { ThemeProvider } from 'styled-components'
 import { indexOf } from 'lodash'
 import {
   transformPosition,
   transformEducation,
   transformJob
 } from 'transform'
+
+export const withTheme = (theme, Component) => {
+  return () => <ThemeProvider theme={theme}><Component /></ThemeProvider>
+}
 
 export const hasPermission = (user, perm) => {
   if (!user || !user.permissions) {
