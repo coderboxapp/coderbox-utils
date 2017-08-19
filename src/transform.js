@@ -19,8 +19,8 @@ export const transformEducation = e => {
   let item = {}
 
   item.id = e._id
-  item.title = e.institution.name
-  item.subtitle = e.degree
+  item.title = e.degree
+  item.subtitle = e.institution.name
   item.image = e.institution.logo || noImage
   item.tags = e.technologies
   item.dateRange = e.timePeriod

@@ -1,6 +1,6 @@
 {
   "name": "@coderbox/utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utilities used at @Coderbox",
   "main": "index.js",
   "scripts": {
